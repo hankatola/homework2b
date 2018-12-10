@@ -1,0 +1,283 @@
+/*  background animation code by Manuel Pinto from
+    https://codepen.io/P1N2O/pen/pyBNzX
+
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a:hover {
+    font-size: 20px;
+    /* background: lightgrey; */
+    color: slateblue;
+}
+
+body {
+    /* begin borrowed css code from https://codepen.io/P1N2O/pen/pyBNzX */
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    /* end borrowed css code from https://codepen.io/P1N2O/pen/pyBNzX */
+    font-family: helvetica;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header {
+    background: white;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    border-bottom: 3px darkgray solid;
+    padding-top: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+section {
+    background: white;
+    clear: both;
+    width: 960px;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    color: darkslategray;
+    /* font-family: helvetica; */
+    /* padding: 20px; */
+}
+
+footer {
+    width: 100%;
+    background: #202124;
+    color: white;
+    position: fixed;
+    vertical-align: bottom;
+    font-size: 14px;
+    bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-top: 10px darkslateblue solid;
+}
+
+img {
+    padding-right: 20px;
+    /* padding-bottom: 20px; */
+    padding-top: 20px;
+}
+
+input,
+textarea {
+    vertical-align: top;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    /* -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; */
+}
+
+textarea:focus {
+    border: 2px solid lightgrey;
+    padding: 9px;
+}
+
+input:focus {
+    border: 2px solid lightgrey;
+    padding: 9px;
+}
+
+input[type=submit] {
+    width: auto;
+    float: left;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: white;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    width: auto;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: .9;
+    border-radius: 0px;
+}
+
+input[type=submit]:hover {
+    opacity: 1;
+}
+
+textarea[name="comment"] {
+    width: 100%;
+    height: 300px;
+}
+
+.body-border {
+    background: lightgray;
+    height: 3px;
+    margin: 20px 0px;
+}
+
+.box {
+    width: auto;
+    float: left;
+    /* margin: 20px; */
+}
+
+.name {
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    /* background: transparent; */
+    color: white;
+    padding: 20px;
+    float: bottom;
+}
+
+.nav {
+    padding: 20px;
+    width: 120px;
+    float: right;
+    /* border-right: 1px darkslategray solid; */
+    float: bottom;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content-button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: white;
+    background: darkslateblue;
+    width: auto;
+}
+
+#content {
+    padding-top: 20px;
+    margin-top: 126px;
+    margin-bottom: 79px;
+    padding: 20px;
+    text-align: left;
+    line-height: 1.75;
+}
+
+.portfolio-image-box {
+    float: left;
+    margin-right: 20px;
+    /* padding-bottom: 20px;
+    margin-bottom: 20px; */
+    opacity: .9;
+}
+
+.portfolio-image {
+    margin: 0;
+    padding: 0;
+    opacity: inherit;
+}
+
+.image-banner {
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+    background: darkslateblue;
+    color: white;
+    opacity: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.portfolio-image-box:hover {
+    opacity: 1;
+}
+
+
+/* .image-banner:hover {
+    opacity: 1;
+} */
+
+.space {
+    height: 20px;
+}
+
+#content-head {
+    align-self: left;
+}
+
+#message-box {
+    height: 80px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* begin borrowed css code from https://codepen.io/P1N2O/pen/pyBNzX */
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+/* end borrowed css code from https://codepen.io/P1N2O/pen/pyBNzX */
