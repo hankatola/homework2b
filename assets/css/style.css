@@ -240,6 +240,43 @@ textarea[name="comment"] {
     display: none;
 }
 
+@media screen and (max-width: 980px) {
+    section {
+        width: 748px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 620px;
+    }
+    .nav {
+        width: 33.333%;
+        margin: auto;
+    }
+    .name {
+        float: top;
+        width: 100vw;
+    }
+    .portfolio-image-box {
+        margin: auto !important;
+        text-align: center !important;
+        width: 300px;
+        float: none;
+    }
+    #small {
+        text-align: center !important;
+        margin: auto !important;
+    }
+    #content {
+        margin-top: 156px;
+    }
+    #head-section {
+        margin: 0;
+        padding: 0;
+    }
+}
+
 
 /* begin borrowed css code from https://codepen.io/P1N2O/pen/pyBNzX */
 
